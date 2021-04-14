@@ -1,0 +1,21 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+#game-over {
+  text-align: center;
+  padding: 4em;
+  display: none;
+  width: 400px;
+  height: 400px;
+  background-color:blanchedalmond;
+  position: fixed;
+  top: 25%;
+  left: 25%;
+}
+
+#play-again {
+  font-size: 1.4em;
+  margin-top: 3em;
+} 

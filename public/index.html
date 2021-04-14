@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Sketch</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="css/welcome.css">
+        <link rel="stylesheet" href="css/particles.css">
+        <script src="libraries/p5.min.js"></script>
+        <script src="libraries/p5.sound.min.js"></script>
+        <script src="libraries/p5.collide2d.js"></script>
+        <script src="libraries/p5.play.js"></script>
+        <script src="https://cdn.socket.io/4.0.1/socket.io.min.js" integrity="sha384-LzhRnpGmQP+lOvWruF/lgkcqD+WDVt9fU3H4BWmwP5u5LTmkUGafMcpZKNObVMLU" crossorigin="anonymous"></script>
+    </head>
+    
+    <body>
+        
+        <div id="welcome-screen">
+            <div id="particles-js">
+            </div>
+            <div class="on-top">
+                <span class="big-title">
+                    <h1 class="tc">Welcome</h1>
+                </span>
+                <form action="http://localhost:2000/play" method="GET" id="play-form">
+                    <div class="huge-text flex-c-ac">
+                        <label for="username" class="label-top">Username</label>
+                        <input name="username" class="huge-text" id="username" value="stranger">
+                    </div>
+                    <div class="huge-text">
+                        <button id="play-button">Play</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="game-over">
+            <h1>Game Over</h1>
+            <button id = "play-again">Play Again</button>
+        </div>
+        
+        <!-- &lt;!&ndash; particles.js lib - https://github.com/VincentGarreau/particles.js &ndash;&gt; -->
+        
+        <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->
+        <script src="js/particles.js"></script>
+        <script src="enviornment.js"></script>
+        <script src="bullet.js"></script>
+        <script src="player.js"></script>
+        <script src="enemy.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous"></script>
+        <script src="navigator.js"></script>
+    </body>
+    </html>
