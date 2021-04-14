@@ -9,7 +9,7 @@ let gameover = false;
 
 //called whe the player just joins and the data is loaded
 function setup() {
-    socket = io.connect('http://localhost:2000');
+    socket = io.connect(window.location.hostname);
     createCanvas(windowWidth, windowHeight);
     environment = new Enviornment();
     socket.on('number_of_players', Spawn_with_players);
