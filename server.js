@@ -16,7 +16,7 @@ app.use('/', express.static(__dirname + '/public'));
 console.log('app is running on 2000')
 
 //socket initialization
-// io.pingInterval=100;
+io.pingInterval=100;
 
 io.on('connection', newConnection);
 
